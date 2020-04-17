@@ -1,0 +1,252 @@
+/*anchura última columna tabla*/
+#gcrud-search-form > table > tbody > tr > td:nth-child(16){
+    /* background-color: yellow; */
+    border:0px;
+    width:3%;
+    }
+    #gcrud-search-form > table > thead > tr:nth-child(1) > th.text-center{
+        /* background-color: yellow; */
+        border:0px;
+        width:3%;
+    }
+    #gcrud-search-form > table > thead > tr.filter-row.gc-search-row > th{
+        /* background-color: yellow; */
+        border:0px;
+        width:3%;
+    }
+    
+    /*anchura columnas */
+    #gcrud-search-form > table > thead > tr:nth-child(1) > th:nth-child(3){
+    width:8%;
+    }
+    #gcrud-search-form > table > thead > tr:nth-child(1) > th:nth-child(4){
+    width:12%;
+    }
+    #gcrud-search-form > table > thead > tr:nth-child(1) > th:nth-child(5){
+    width:6%;
+    }
+    #gcrud-search-form > table > thead > tr:nth-child(1) > th:nth-child(6){
+    width:8%;
+    }
+
+    
+#gcrud-search-form > table > tbody > tr > td:nth-child(13){
+    font-size:10px; 
+}
+#gcrud-search-form > table > tbody > tr > td:nth-child(14){
+    font-size:10px; 
+}
+#gcrud-search-form > table > tbody > tr > td:nth-child(15){
+    font-size:10px; 
+}
+
+
+
+
+#field_id_curso_chosen{
+    margin-left: 120px !important;
+    margin-top: 5px !important;
+    width:150px !important;
+}
+.id_curso_form_group > label{
+    margin-top:-14px;
+}
+#field_id_trimestres_chosen{
+    margin-left: 120px !important;
+    margin-top: 5px !important;
+    width:150px !important;
+}
+.id_trimestres_form_group > label{
+    margin-top:-14px;
+}
+#field_id_grupo_chosen{
+    margin-left: 120px !important;
+    margin-top: 5px !important;
+    width  :150px !important;
+}
+.id_grupo_form_group > label{
+    margin-top:-14px;
+}
+
+    .nombre_actividad_form_group > label{
+        margin-top:-12px;
+    }
+    .nombre_actividad_form_group > label.active{
+        margin-top: 12px;
+    }
+    .nombre_actividad_form_group>label.active+input#field-nombre_actividad {
+        padding-top:12px; 
+        padding-bottom:0px;
+    }
+
+
+    .horas_actividad_T1_form_group > label{
+        margin-top:-12px;
+    }
+    .horas_actividad_T1_form_group > label.active{
+        margin-top: 12px;
+    }
+    .horas_actividad_T1_form_group>label.active+input#field-horas_actividad_T1 {
+        padding-top:12px; 
+        padding-bottom:0px;
+    }
+
+    .horas_actividad_T2_form_group > label{
+        margin-top:-12px;
+    }
+    .horas_actividad_T2_form_group > label.active{
+        margin-top: 12px;
+    }
+    .horas_actividad_T2_form_group>label.active+input#field-horas_actividad_T2 {
+        padding-top:12px; 
+        padding-bottom:0px;
+    }
+
+    .horas_actividad_T3_form_group > label{
+        margin-top:-12px;
+    }
+    .horas_actividad_T3_form_group > label.active{
+        margin-top: 12px;
+    }
+    .horas_actividad_T3_form_group>label.active+input#field-horas_actividad_T3 {
+        padding-top:12px; 
+        padding-bottom:0px;
+    }
+
+    .precio_general_anual_form_group > label{
+        margin-top:-12px;
+    }
+    .precio_general_anual_form_group > label.active{
+        margin-top: 12px;
+    }
+    .precio_general_anual_form_group>label.active+input#field-precio_general_anual {
+        padding-top:12px; 
+        padding-bottom:0px;
+    }
+
+    .precio_general_mes_form_group > label{
+        margin-top:-12px;
+    }
+    .precio_general_mes_form_group > label.active{
+        margin-top: 12px;
+    }
+    .precio_general_mes_form_group>label.active+input#field-precio_general_mes {
+        padding-top:12px; 
+        padding-bottom:0px;
+    }
+
+
+    .precio_infancia_anual_form_group > label{
+        margin-top:-12px;
+    }
+    .precio_infancia_anual_form_group > label.active{
+        margin-top: 12px;
+    }
+    .precio_infancia_anual_form_group>label.active+input#field-precio_infancia_anual {
+        padding-top:12px; 
+        padding-bottom:0px;
+    }
+
+    .descuento_primer_hermano_form_group > label{
+        margin-top:-12px;
+    }
+    .descuento_primer_hermano_form_group > label.active{
+        margin-top: 12px;
+    }
+    .descuento_primer_hermano_form_group>label.active+input#field-descuento_primer_hermano {
+        padding-top:12px; 
+        padding-bottom:0px;
+    }
+
+    .descuento_siguientes_hermanos_form_group > label{
+        margin-top:-12px;
+    }
+    .descuento_siguientes_hermanos_form_group > label.active{
+        margin-top: 12px;
+    }
+    .descuento_siguientes_hermanos_form_group>label.active+input#field-descuento_siguientes_hermanos {
+        padding-top:12px; 
+        padding-bottom:0px;
+    }
+
+    .precio_general_trimestre_form_group > label{
+        margin-top:-12px;
+    }
+    .precio_general_trimestre_form_group > label.active{
+        margin-top: 12px;
+    }
+    .precio_general_trimestre_form_group>label.active+input#field-precio_general_trimestre {
+        padding-top:12px; 
+        padding-bottom:0px;
+    }
+
+    .iva_form_group > label{
+        margin-top:-12px;
+    }
+    .iva_form_group > label.active{
+        margin-top: 12px;
+    }
+    .iva_form_group>label.active+input#field-iva {
+        padding-top:12px; 
+        padding-bottom:0px;
+    }
+
+    .num_maximo_form_group > label{
+        margin-top:-12px;
+    }
+    .num_maximo_form_group > label.active{
+        margin-top: 12px;
+    }
+    .num_maximo_form_group>label.active+input#field-num_maximo {
+        padding-top:12px; 
+        padding-bottom:0px;
+    }
+
+    .horario_desde_form_group > label{
+        margin-top:-12px;
+    }
+    .horario_desde_form_group > label.active{
+        margin-top: 12px;
+    }
+    .horario_desde_form_group>label.active+input#field-horario_desde {
+        padding-top:12px; 
+        padding-bottom:0px;
+    }
+
+    .horario_hasta_form_group > label{
+        margin-top:-12px;
+    }
+    .horario_hasta_form_group > label.active{
+        margin-top: 12px;
+    }
+    .horario_hasta_form_group>label.active+input#field-horario_hasta {
+        padding-top:12px; 
+        padding-bottom:0px;
+    }
+    
+
+   
+#field_grupo_anterior_chosen{
+    margin-left: 120px !important;
+    margin-top: 5px !important;
+    width:200px !important;
+}
+.grupo_anterior_form_group > label{
+    margin-top:-14px;
+}
+#field_grupo_siguiente_chosen{
+    margin-left: 120px !important;
+    margin-top: 5px !important;
+    width:200px !important;
+}
+.grupo_siguiente_form_group > label{
+    margin-top:-14px;
+}
+#field_lista_espera_chosen{
+    margin-left: 120px !important;
+    margin-top: 5px !important;
+    width:200px !important;
+}
+.lista_espera_form_group > label{
+    margin-top:-14px;
+}

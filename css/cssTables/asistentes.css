@@ -1,0 +1,16 @@
+/* alineación columnas */
+/* importe */
+#gcrud-search-form > table > tbody > tr > td:nth-child(8){
+    text-align: right;
+    padding-right: 10px;
+}
+/* fecha */
+#gcrud-search-form > table > tbody > tr > td:nth-child(9){
+    text-align: center;
+    /* padding-right: 10px; */
+}
+
+/* cambia el color por defecto de  la barra */  
+.red{
+    background-color: #4285F4 !important;
+}

@@ -1,0 +1,1145 @@
+#crudForm>div>div.card-body {
+    display: grid;
+    /* grid-template-rows: 60px auto repeat(3, 80px) auto repeat(2, 80px) auto auto auto 80px repeat(6,48px) auto repeat(8,48px) auto repeat(5,48px) auto repeat(2,48px) auto repeat(3,48px) auto auto repeat(4,30px); */
+    grid-template-columns: repeat(20, 1fr);
+    grid-column-gap: 1%;
+    grid-row-gap: 0%;
+    /* height: 4000px; */
+}
+
+/*elimina casilla búsqueda en dropdowns */
+div.chosen-search {
+    display: none;
+}
+
+div.chosen-drop {
+    margin-top: -13px !important;
+}
+
+#crudForm>div>div.card-body>p.subtitulo
+ {
+    display: none; 
+}
+
+#crudForm>div>div.card-body>div.md-form {
+    margin-top: 12px;
+    display: none;
+}
+
+#report-error {
+    display: none;
+}
+
+.subtitulo {
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.subtitulo0{
+    margin-top:0px;
+}
+
+
+
+/* num_ludoteca */
+#crudForm>div>div.card-body>div.num_ludoteca_form_group {
+    margin-top: 20px;
+    grid-column: 1 / span 15;
+    grid-row: 1/1;
+    display: block;
+}
+
+/* LUDOTECA */
+#crudForm>div>div.card-body>p.subtitulo0 {
+    grid-column: 1 / span 20;
+    grid-row: 6/6;
+    display: block;
+}
+
+/*curso*/
+#crudForm>div>div.card-body>div.texto_ultimo_curso_form_group {
+    margin-top: 2px;
+    grid-column: 1 / span 3;
+    grid-row: 7/7;
+    display: block;
+}
+#crudForm > div > div.card-body > div.md-form.texto_ultimo_curso_form_group{
+    font-size:1rem;
+}
+
+
+/*nombre_ludoteca*/
+#crudForm>div>div.card-body>div.nombre_ludoteca_form_group {
+    margin-top: 2px;
+    grid-column: 4 / span 12;
+    grid-row: 7/7;
+    display: block;
+}
+
+#field-nombre_ludoteca {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.nombre_ludoteca_form_group>label {
+    padding-bottom: 22px;
+}
+
+#crudForm>div>div.card-body>div.md-form.nombre_ludoteca_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.nombre_ludoteca_form_group>label.active+input#field-nombre_ludoteca {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/* DADES CONTRACTADOR */
+#crudForm>div>div.card-body>p.subtitulo1 {
+    grid-column: 1 / span 20;
+    grid-row: 2/2;
+    display: block;
+}
+
+
+
+/*dni_contratante*/
+#crudForm>div>div.card-body>div.dni_contratante_form_group {
+    margin-top: 2px;
+    grid-column: 1 / span 3;
+    grid-row: 3/3;
+    display: block;
+}
+
+#field-dni_contratante {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.dni_contratante_form_group>label {
+    padding-bottom: 22px;
+}
+
+#crudForm>div>div.card-body>div.md-form.dni_contratante_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.dni_contratante_form_group>label.active+input#field-dni_contratante {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*nombre_contratante*/
+#crudForm>div>div.card-body>div.nombre_contratante_form_group {
+    margin-top: 2px;
+    grid-column: 4 / span 5;
+    grid-row: 3/3;
+    display: block;
+}
+
+#field-nombre_contratante {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.nombre_contratante_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.nombre_contratante_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.nombre_contratante_form_group>label.active+input#field-nombre_contratante {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*apellido1_contratante*/
+#crudForm>div>div.card-body>div.apellido1_contratante_form_group {
+    margin-top: 2px;
+    grid-column: 9/ span 5;
+    grid-row: 3/3;
+    display: block;
+}
+
+/*apellido1_contratante */
+#field-apellido1_contratante {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.apellido1_contratante_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.apellido1_contratante_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.apellido1_contratante_form_group>label.active+input#field-apellido1_contratante {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*apellido2_contratante*/
+#crudForm>div>div.card-body>div.apellido2_contratante_form_group {
+    margin-top: 2px;
+    grid-column: 14 / span 5;
+    grid-row: 3/3;
+    display: block;
+}
+
+#field-apellido2_contratante {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.apellido2_contratante_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.apellido2_contratante_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.apellido2_contratante_form_group>label.active+input#field-apellido2_contratante {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+
+/*entidad_contratante*/
+#crudForm>div>div.card-body>div.entidad_contratante_form_group {
+    margin-top: 2px;
+    grid-column: 1 / span 5;
+    grid-row: 4/4;
+    display: block;
+}
+
+/* entidad contratante */
+#field-entidad_contratante {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.entidad_contratante_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.entidad_contratante_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.entidad_contratante_form_group>label.active+input#field-entidad_contratante {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*email_contratante*/
+#crudForm>div>div.card-body>div.email_contratante_form_group {
+    margin-top: 2px;
+    grid-column: 6 / span 8;
+    grid-row: 4/4;
+    display: block;
+}
+
+#field-email_contratante {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.email_contratante_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.email_contratante_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.email_contratante_form_group>label.active+input#field-email_contratante {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*telefono1_contratante*/
+#crudForm>div>div.card-body>div.telefono1_contratante_form_group {
+    margin-top: 2px;
+    grid-column: 14 / span 3;
+    grid-row: 4/4;
+    display: block;
+}
+
+#field-telefono1_contratante {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.telefono1_contratante_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.telefono1_contratante_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.telefono1_contratante_form_group>label.active+input#field-telefono1_contratante {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*telefono2_contratante*/
+#crudForm>div>div.card-body>div.telefono2_contratante_form_group {
+    margin-top: 2px;
+    grid-column: 17 / span 3;
+    grid-row: 4/4;
+    display: block;
+}
+
+#field-telefono2_contratante {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.telefono2_contratante_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.telefono2_contratante_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.telefono2_contratante_form_group>label.active+input#field-telefono2_contratante {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+
+
+/*direccion_contratante*/
+#crudForm>div>div.card-body>div.direccion_contratante_form_group {
+    margin-top: 2px;
+    grid-column: 1 / span 5;
+    grid-row: 5/5;
+    display: block;
+}
+
+#field-direccion_contratante {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.direccion_contratante_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.direccion_contratante_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.direccion_contratante_form_group>label.active+input#field-direccion_contratante {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*poblacion_contratante*/
+#crudForm>div>div.card-body>div.poblacion_contratante_form_group {
+    margin-top: 2px;
+    grid-column: 6 / span 4;
+    grid-row:  5/5;
+    display: block;
+}
+
+#field-poblacion_contratante {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.poblacion_contratante_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.poblacion_contratante_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.poblacion_contratante_form_group>label.active+input#field-poblacion_contratante {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*provincia_contratante*/
+#crudForm>div>div.card-body>div.provincia_contratante_form_group {
+    margin-top: 2px;
+    grid-column: 10 / span 5;
+    grid-row:  5/5;
+    display: block;
+}
+
+#field-provincia_contratante {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.provincia_contratante_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.provincia_contratante_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.provincia_contratante_form_group>label.active+input#field-provincia_contratante {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*codigo_postal_contratante*/
+#crudForm>div>div.card-body>div.codigo_postal_contratante_form_group {
+    margin-top: 2px;
+    grid-column: 15 / span 3;
+    grid-row:  5/5;
+    display: block;
+}
+
+#field-codigo_postal_contratante {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.codigo_postal_contratante_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.codigo_postal_contratante_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.codigo_postal_contratante_form_group>label.active+input#field-codigo_postal_contratante {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+
+/*fecha_desde*/
+#crudForm>div>div.card-body>div.fecha_desde_form_group {
+    margin-top: 2px;
+    grid-column: 1 / span 8;
+    grid-row: 8/8;
+    display: block;
+}
+
+#field-fecha_desde {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.fecha_desde_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.fecha_desde_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.fecha_desde_form_group>label.active+input#field-fecha_desde {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*fecha_hasta*/
+#crudForm>div>div.card-body>div.fecha_hasta_form_group {
+    margin-top: 2px;
+    grid-column: 9 / span 8 ;
+    grid-row: 8/8;
+    display: block;
+}
+
+#field-fecha_hasta {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.fecha_hasta_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.fecha_hasta_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.fecha_hasta_form_group>label.active+input#field-fecha_hasta {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*horario_desde*/
+#crudForm>div>div.card-body>div.horario_desde_form_group {
+    margin-top: 2px;
+    grid-column: 17 / span 5;
+    grid-row: 8/8;
+    display: block;
+}
+
+#field-horario_desde {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.horario_desde_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.horario_desde_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.horario_desde_form_group>label.active+input#field-horario_desde {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*horario_hasta*/
+#crudForm>div>div.card-body>div.horario_hasta_form_group {
+    margin-top: 2px;
+    grid-column: 23 / span 5;
+    grid-row: 8/8;
+    display: block;
+}
+
+#field-horario_hasta {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.horario_hasta_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.horario_hasta_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.horario_hasta_form_group>label.active+input#field-horario_hasta {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+#crudForm>div>div.card-body>div.id_dias_semana_form_group {
+    margin-top: -24px;
+    grid-column: 1 / span 3;
+    grid-row: 9/9;
+    display: none;
+
+}
+
+.form-check{
+    margin-top:16px;
+}
+.form-check-label{
+    padding-left: 24px !important;
+    padding-top: 5px;
+}
+
+#crudForm>div>div.card-body>div.texto_dias_semana_form_group {
+    margin-top: -6px;
+    grid-column: 1 / span 3;
+    grid-row: 9/9;
+    display: block;
+}
+
+#crudForm > div > div.card-body > div.form-check.dl{
+    grid-column: 1 / span 2;
+    grid-row: 9/9;
+    display: block;
+}
+
+#crudForm > div > div.card-body > div.form-check.dm{
+    grid-column: 3 / span 2;
+    grid-row: 9/9;
+    display: block;
+}
+#crudForm > div > div.card-body > div.form-check.dc{
+    grid-column: 5 / span 2;
+    grid-row: 9/9;
+    display: block;
+}
+#crudForm > div > div.card-body > div.form-check.dj{
+    grid-column: 7 / span 2;
+    grid-row: 9/9;
+    display: block;
+}
+#crudForm > div > div.card-body > div.form-check.dv{
+    grid-column: 9 / span 2;
+    grid-row: 9/9;
+    display: block;
+}
+#crudForm > div > div.card-body > div.form-check.ds{
+    grid-column: 11 / span 2;
+    grid-row: 9/9;
+    display: block;
+}
+#crudForm > div > div.card-body > div.form-check.dg{
+    grid-column: 13 / span 2;
+    grid-row: 9/9;
+    display: block;
+}
+
+
+#field-id_dias_semana{
+    border:0px !important;
+}
+
+
+
+
+/* COMUNICACIONS */
+#crudForm>div>div.card-body>p.subtitulo2 {
+    grid-column: 1 / span 20;
+    grid-row: 13/13;
+    display: block;
+}
+
+#crudForm>div>div.card-body>div.id_comunicaciones_form_group {
+    grid-column: 19 / span 12;
+    grid-row: 14/14;
+    display: block;
+}
+
+#crudForm>div>div.card-body>div.texto_id_comunicaciones_form_group {
+    margin-top: 8px;
+    grid-column: 1 / span 12;
+    grid-row: 14/14;
+    display: block;
+}
+
+#field_id_comunicaciones_chosen {
+    width: 90px !important;
+    margin-top: 50px !important;
+
+}
+
+#field_id_comunicaciones_chosen>a {
+    margin-top: -38px;
+}
+
+
+#crudForm>div>div.card-body>div.id_otras_comunicaciones_form_group {
+    grid-column: 19 / span 12;
+    grid-row: 15/15;
+    display: block;
+}
+
+#crudForm>div>div.card-body>div.texto_id_otras_comunicaciones_form_group {
+    margin-top: 8px;
+    grid-column: 1 / span 15;
+    grid-row: 15/15;
+    display: block;
+}
+
+#field_id_otras_comunicaciones_chosen {
+    width: 90px !important;
+    margin-top: 50px !important;
+
+}
+
+#field_id_otras_comunicaciones_chosen>a {
+    margin-top: -38px;
+}
+
+
+/* AUTORITZACIONS LEGALS */
+#crudForm>div>div.card-body>p.subtitulo3 {
+    grid-column: 1 / span 20;
+    grid-row: 16/16;
+    display: block;
+}
+
+#crudForm>div>div.card-body>div.id_decisiones_urgentes_form_group {
+    grid-column: 19 / span 12;
+    grid-row: 17/17;
+    display: block;
+}
+
+#crudForm>div>div.card-body>div.texto_id_decisiones_urgentes_form_group {
+    margin-top: 8px;
+    grid-column: 1 / span 18;
+    grid-row: 17/17;
+    display: block;
+}
+
+#field_id_decisiones_urgentes_chosen {
+    width: 90px !important;
+    margin-top: 50px !important;
+
+}
+
+#field_id_decisiones_urgentes_chosen>a {
+    margin-top: -38px;
+}
+
+
+#crudForm>div>div.card-body>div.id_imagen_en_actividades_form_group {
+    grid-column: 19 / span 12;
+    grid-row: 18/18;
+    display: block;
+}
+
+#crudForm>div>div.card-body>div.texto_id_imagen_en_actividades_form_group {
+    margin-top: 8px;
+    grid-column: 1 / span 18;
+    grid-row: 18/18;
+    display: block;
+}
+
+#field_id_imagen_en_actividades_chosen {
+    width: 90px !important;
+    margin-top: 50px !important;
+
+}
+
+#field_id_imagen_en_actividades_chosen>a {
+    margin-top: -38px;
+}
+
+#crudForm>div>div.card-body>div.id_imagen_divulgacion_form_group {
+    grid-column: 19 / span 12;
+    grid-row: 19/19;
+    display: block;
+}
+
+#crudForm>div>div.card-body>div.texto_id_imagen_divulgacion_form_group {
+    margin-top: 8px;
+    grid-column: 1 / span 18;
+    grid-row: 19/19;
+    display: block;
+}
+
+#field_id_imagen_divulgacion_chosen {
+    width: 90px !important;
+    margin-top: 50px !important;
+
+}
+
+#field_id_imagen_divulgacion_chosen>a {
+    margin-top: -38px;
+}
+
+#crudForm>div>div.card-body>div.id_lectura_informacion_form_group {
+    grid-column: 19 / span 12;
+    grid-row: 20/20;
+    display: block;
+}
+
+#crudForm>div>div.card-body>div.texto_id_lectura_informacion_form_group {
+    margin-top: 8px;
+    grid-column: 1 / span 18;
+    grid-row: 20/20;
+    display: block;
+}
+
+#field_id_lectura_informacion_chosen {
+    width: 90px !important;
+    margin-top: 50px !important;
+
+}
+
+#field_id_lectura_informacion_chosen>a {
+    margin-top: -38px;
+}
+
+
+
+
+
+/*----------------------------*/
+
+/* LUDOTECA */
+#crudForm>div>div.card-body>p.subtitulo4 {
+    grid-column: 1 / span 20;
+    grid-row: 21/21;
+    display: block;
+}
+
+#crudForm>div>div.card-body>div.id_pago_global_form_group {
+    grid-column: 8 / span 4;
+    grid-row: 22/22;
+    display: block;
+}
+
+#crudForm>div>div.card-body>div.texto_id_pago_global_form_group {
+    margin-top: 8px;
+    grid-column: 1 / span 7;
+    grid-row: 22/22;
+    display: block;
+}
+
+#field_id_pago_global_chosen {
+    width: 90px !important;
+    margin-top: 50px !important;
+
+}
+
+#field_id_pago_global_chosen>a {
+    margin-top: -38px;
+}
+
+/*precio*/
+#crudForm>div>div.card-body>div.precio_form_group {
+    margin-top: 2px;
+    grid-column: 14 / span 5;
+    grid-row: 22/22;
+    display: block;
+}
+
+#field-precio {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.precio_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.precio_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.precio_form_group>label.active+input#field-precio {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+
+
+
+/*precio_general_anual*/
+#crudForm>div>div.card-body>div.precio_general_anual_form_group {
+    margin-top: 2px;
+    grid-column: 1 / span 5;
+    grid-row: 23/23;
+    display: block;
+}
+
+#field-precio_general_anual {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.precio_general_anual_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.precio_general_anual_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.precio_general_anual_form_group>label.active+input#field-precio_general_anual {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+
+/*precio_infancia_anual*/
+#crudForm>div>div.card-body>div.precio_infancia_anual_form_group {
+    margin-top: 2px;
+    grid-column: 6 / span 5;
+    grid-row: 23/23;
+    display: block;
+}
+
+#field-precio_infancia_anual {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.precio_infancia_anual_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.precio_infancia_anual_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.precio_infancia_anual_form_group>label.active+input#field-precio_infancia_anual {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+
+/*precio_general_trimestre*/
+#crudForm>div>div.card-body>div.precio_general_trimestre_form_group {
+    margin-top: 2px;
+    grid-column: 11 / span 5;
+    grid-row: 23/23;
+    display: block;
+}
+
+#field-precio_general_trimestre {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.precio_general_trimestre_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.precio_general_trimestre_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.precio_general_trimestre_form_group>label.active+input#field-precio_general_trimestre {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*descuento_primer_hermano*/
+#crudForm>div>div.card-body>div.descuento_primer_hermano_form_group {
+    margin-top: 2px;
+    grid-column: 16 / span 5;
+    grid-row: 23/23;
+    display: block;
+}
+
+#field-descuento_primer_hermano {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.descuento_primer_hermano_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.descuento_primer_hermano_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.descuento_primer_hermano_form_group>label.active+input#field-descuento_primer_hermano {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+
+/*descuento_siguientes_hermanos*/
+#crudForm>div>div.card-body>div.descuento_siguientes_hermanos_form_group {
+    margin-top: 2px;
+    grid-column: 21 / span 5;
+    grid-row: 23/23;
+    display: block;
+}
+
+#field-descuento_siguientes_hermanos {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.descuento_siguientes_hermanos_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.descuento_siguientes_hermanos_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.descuento_siguientes_hermanos_form_group>label.active+input#field-descuento_siguientes_hermanos {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*iva*/
+#crudForm>div>div.card-body>div.iva_form_group {
+    margin-top: 2px;
+    grid-column: 1 / span 5;
+    grid-row: 24/24;
+    display: block;
+}
+
+#field-iva {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.iva_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.iva_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.iva_form_group>label.active+input#field-iva {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*num_maximo*/
+#crudForm>div>div.card-body>div.num_maximo_form_group {
+    margin-top: 2px;
+    grid-column: 6 / span 5;
+    grid-row: 24/24;
+    display: block;
+}
+
+#field-num_maximo {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.num_maximo_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.num_maximo_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.num_maximo_form_group>label.active+input#field-num_maximo {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+
+
+/*horas_actividad_T1*/
+#crudForm>div>div.card-body>div.horas_actividad_T1_form_group {
+    margin-top: 2px;
+    grid-column: 11 / span 5;
+    grid-row: 24/24;
+    display: block;
+}
+
+#field-horas_actividad_T1 {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.horas_actividad_T1_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.horas_actividad_T1_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.horas_actividad_T1_form_group>label.active+input#field-horas_actividad_T1 {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*horas_actividad_T2*/
+#crudForm>div>div.card-body>div.horas_actividad_T2_form_group {
+    margin-top: 2px;
+    grid-column: 16 / span 5;
+    grid-row: 24/24;
+    display: block;
+}
+
+#field-horas_actividad_T2 {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.horas_actividad_T2_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.horas_actividad_T2_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.horas_actividad_T2_form_group>label.active+input#field-horas_actividad_T2 {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+
+/*horas_actividad_T3*/
+#crudForm>div>div.card-body>div.horas_actividad_T3_form_group {
+    margin-top: 2px;
+    grid-column: 21 / span 5;
+    grid-row: 24/24;
+    display: block;
+}
+
+#field-horas_actividad_T3 {
+    padding-bottom: 20px;
+}
+
+#crudForm>div>div.card-body>div.md-form.horas_actividad_T3_form_group>label {
+    padding-bottom: 22px;
+}
+
+/* CON VALOR */
+#crudForm>div>div.card-body>div.md-form.horas_actividad_T3_form_group>label.active {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#crudForm>div>div.card-body>div.md-form.horas_actividad_T3_form_group>label.active+input#field-horas_actividad_T3 {
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+
+/* mensaje de error cuando se muestra */
+#crudForm div.form-group {
+    grid-column: 1 / span 24;
+    grid-row: 26 / 26;
+}
+
+
+

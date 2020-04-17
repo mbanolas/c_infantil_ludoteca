@@ -1,0 +1,43 @@
+Modificaciones efectuadas en codigo fuente grocery crud 
+
+1. Para buscar en columnas con fechas
+Las fechas las guarda en formato yyyy-mm-aa aunque si se elige el idioma spanish, la representación es en formato dd/mm/yyyy
+Para que se pueda buscar, según se ve se convierte el texto introducido como dd/mm/yyyyy en yyyy-mm-dd
+Esto lo hace detectando la introduccion de un "/", y realiza la conversión
+La condición se analiza para todos los campos, por lo que las otras búsquedas (no fechas) no deberían contenerla.
+
+archivo cambiado 
+gcrud.datagrid.js
+
+- añadida la función buscar
+//convierte string busqueda en fecha yyyy-mm-dd si
+        //identifica la entrada con "/"
+        //maba modificacion
+        function buscar(dato){
+            if(!isNaN(dato) || dato.indexOf('/')==-1) return dato
+            var d=dato.trim()
+            //console.log(d)
+            var partes=[]
+            while(d.indexOf('/')>0){
+                var p=d.indexOf('/')
+                partes.push(d.substring(0, p))
+                d=d.substring(p+1)
+            }
+            partes.push(d)
+            var fecha="";
+            for(var i=partes.length-1;i>=0;i--){
+                fecha=fecha+partes[i]+'-'
+            }
+            fecha=fecha.substring(0,fecha.length-1)
+            //console.log(fecha)
+            return fecha
+        } 
+
+- cambiada la linea
+        //modificado por maba
+        //original: search_texts.push($(this).val());
+        search_texts.push(buscar($(this).val()));
+
+=============================================================================
+
+

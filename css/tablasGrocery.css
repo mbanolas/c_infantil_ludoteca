@@ -1,0 +1,237 @@
+/* modificando padding cabecera, buscadores y lineas*/
+#gcrud-search-form > table > thead > tr:nth-child(1) > th{
+    padding: 0px 4.8px;
+}
+#gcrud-search-form > table > thead > tr.filter-row.gc-search-row > td{
+    padding: 0px 4.8px;
+}
+#gcrud-search-form > table > tbody > tr > td{
+    padding: 0px 4.8px;
+}
+
+
+/* aumento tamañp barras mení */
+a.button-collapse{
+    font-size: 20px !important;
+}
+
+/* resaltar botones búsqueda en columnas */
+.gc-container .searchable-input.value-not-empty{
+    /* border: 2px dashed red; */
+    background-color: lightblue;
+}
+
+/* color fondo barra navegacion*/
+	.navbar:not(.top-nav-collapse), .navbar.top-nav-collapse {
+		background-color:#233A50 !important;
+    }
+    /* cambio de green por lightgrenn */
+    .default-color-dark{
+        background-color: lightgreen !important;
+    }
+    /*input núm pagina en tabla */ 
+    .page-number-input{
+        margin:0px;
+        padding:0px;
+        font-size:small;
+    }
+    
+   
+    /* color texto tablas */
+    
+	table.grocery-crud-table  td:nth-last-child(1) {
+        padding: 0px ;
+    }
+    /* prmera columna oculta */
+    table.grocery-crud-table  thead tr th:nth-child(1) {
+        display:none;
+    }
+    table.grocery-crud-table  thead tr td:nth-child(1) {
+        display:none;
+    }
+    table.grocery-crud-table tbody tr td:nth-child(1) {
+        display:none;
+    }
+
+    table.grocery-crud-table  thead tr th:nth-last-child(1) {
+         width:12%;
+        visibility: hidden;
+    }
+  
+
+
+
+    
+	table.table .btn.btn-sm {
+		padding: .5rem 0.6rem;
+    }
+
+    
+    div.card-footer > div > div:nth-child(3){
+        margin-top:-10px;
+    }
+    div.card-footer > div > div:nth-child(2){
+        margin-top:-20px;
+    }
+
+
+	.searchable-input {
+		margin:0;
+		padding:0;
+	}
+	table.table thead tr th {
+        font-weight: bold;
+		padding-top: .2rem;
+		padding-bottom: .2rem;
+		border:1px solid #e9ecef;
+	}
+	
+tr.gc-search-row td:nth-child(1){
+	display:inline-flex;
+	margin-top:5px;
+	border:0px;
+}
+.gc-refresh{
+	display:inline-flex;
+	width: 30px;
+	
+}
+.select-all-none{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.fa-search:before {
+    font-size: 2rem;
+    content: "\f002";
+    font-size: 1rem;
+}
+.card{
+    margin-top:75px;
+}
+.card-body{
+    padding-top: 5px;
+}
+
+
+
+.clear-all-search{
+    color:red;
+}
+
+
+.card-body > .row{
+    height: auto;
+ }
+
+.card-body > .row div:nth-child(2){
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+a.search-button{
+    min-width:100px;
+    padding:0px;
+}
+.gc-container .clear-all-search {
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: -30px;
+    position: absolute;
+}
+
+.container-fluid{
+    margin-top:-20px;
+    padding-right:5px !important;
+    padding-left:5px !important;
+}
+
+#search-input{
+    margin-top: 8px !important;
+}
+/*modifica tamaño y margins en botón selección rows por pagina*/
+/* .per_page.form-control.chosen-select{
+    width: 55px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-top: 0px !important;
+} */
+
+/*baja el button CERCAR */
+a.search-button{
+    margin-top:18px;
+}
+
+@media screen and (max-width: 1900px) {
+    .modal > .modal-dialog > .modal-content{
+        background-color: white;
+       
+    } 
+    
+}
+@media screen and (max-width: 1200px) {
+    
+    .modal > .modal-dialog > .modal-content{
+    background-color: white;
+    
+    } 
+    .card-body {
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .modal > .modal-dialog > .modal-content{
+    background-color: white;
+    
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .d-visible{
+        display:none;
+    }
+    .modal > .modal-dialog > .modal-content{
+    background-color: white;
+   
+    }
+    .card-body {
+        background-color: white;
+    }
+}
+
+.modal-lg {
+    max-width: 100%;
+    width:75%;
+    margin: 0px auto;
+}
+
+/* body > header:nth-child(26) > div > div > div > div > div > div.gc-container.container-fluid > div.card > div.card-footer.text-muted.white.clear-fix > div > div:nth-child(1) > div:nth-child(2){
+    width:76px;
+}
+body > header:nth-child(26) > div > div > div > div > div > div.gc-container.container-fluid > div.card > div.card-footer.text-muted.white.clear-fix > div > div:nth-child(1) > div:nth-child(2) > div{
+    width:60px !important;
+    margin-top:0px;
+    margin-left:8px;
+    margin-right:8px;
+    padding-bottom: 13px;
+} */
+
+/*elimina casilla búsqueda en dropdowns */
+div.chosen-search {
+    display: none;
+}
+
+
+
+div.card-footer > div > div >div > div {
+    /* background-color: red; */
+    width:76px !important;
+    margin-top:0px;
+    margin-left:8px;
+    margin-right:8px;
+}
+
+
+
+/* fin style tabla ---------------------------------------------------*/

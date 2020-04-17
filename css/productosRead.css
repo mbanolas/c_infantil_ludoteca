@@ -1,0 +1,357 @@
+#crudForm{
+    /* background: yellow; */
+    display: grid;
+    grid-template-columns: repeat(12 1fr);
+    /* grid-template-rows: auto; */
+    /* grid-template-areas: 
+      "id_proveedor nombre_proveedor nombre_proveedor nombre_proveedor nombre_proveedor"
+      "domicilio domicilio cp poblacion poblacion"; */
+    grid-column-gap: 0%; 
+    grid-row-gap: 10px; 
+  } 
+
+  
+  
+ 
+  #crudForm > div.row  {
+      /* background: gold; */
+      /* margin-top:0px;
+      width:100%; */
+      margin-top:0px;
+      display:none;
+   }
+
+   .titulo_valor{
+       color:blue;
+       font-size: 0.9rem;
+   }
+
+   #crudForm > div >div:nth-child(1) {
+       color:blue;
+       font-size: 0.9rem;
+   }
+   #crudForm > div >div:nth-child(2) {
+    
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1900px) {
+   #crudForm > div.codigo_producto {
+    grid-column: 1 / span 1;
+    grid-row: 1 / 1; 
+    display:block;
+ }
+
+  #crudForm >div.id_producto_mostrar {
+    grid-column:4 / span 1;
+    grid-row: 1 / 1; 
+  display:block;
+}
+#crudForm >div.nombre {
+    grid-column: 6 / span 5;
+    grid-row: 1 / 1; 
+  display:block;
+} 
+#crudForm >div.tipo_unidad_mostrar {
+    grid-column: 12 / span 1;
+    grid-row: 1 / 1; 
+    display:block;
+    
+  }
+ 
+  #crudForm >div.url_imagen_portada_mostrar {
+    grid-column: 1 / span 3;
+    grid-row: 2 / 6;
+    display:block;
+  }
+
+  
+ 
+#crudForm >div.status_producto {
+    grid-column: 3 / span 1;
+    grid-row: 2 / 2; 
+    display:block;
+    
+  } 
+  #crudForm div.id_grupo {
+    grid-column: 5 / span 1;
+    grid-row: 2 / 2;
+    display:block;
+   
+  }
+ 
+  
+
+  #crudForm div.id_familia {
+    grid-column: 7/ span 1;
+    grid-row: 2 / 2;
+    display:block;
+   
+   
+  }
+
+  #crudForm div.peso_real_mostrar {
+    grid-column: 10 / span 1;
+    grid-row: 2 / 2;
+    display:block;
+   
+    
+   
+}
+
+  #crudForm div.anada {
+    grid-column: 3/ span 1;
+    grid-row: 3 / 3;
+     display:block; 
+  } 
+
+  
+
+ 
+
+
+#crudForm >div.control_stock_mostrar {
+grid-column: 5 / span 1;
+grid-row: 3 / 3;
+display:block;
+
+}
+
+#crudForm >div.stock_mostrar {
+    grid-column: 7 / span 1;
+    grid-row: 3 / 3;
+    display:block;
+    
+    
+  } 
+
+  #crudForm >div.id_proveedor_web {
+    grid-column: 3 / span 1;
+    grid-row: 4/ 4;
+    display:block;
+    
+    
+  } 
+
+  #crudForm >div.unidades_caja_mostrar {
+    grid-column: 10 / span 1;
+    grid-row: 4/ 4;
+    display:block;
+    
+    
+  } 
+
+  #crudForm >div.unidades_precio_mostrar {
+    grid-column: 1 / span 1;
+    grid-row: 5/ 5;
+    display:block;
+    
+  } 
+  #crudForm >div.precio_compra_mostrar {
+    grid-column: 3 / span 1;
+    grid-row: 5/ 5;
+    display:block;
+    
+  } 
+  #crudForm >div.descuento_1_compra_mostrar {
+    grid-column: 6 / span 1;
+    grid-row: 5/ 5;
+    display:block;
+    
+  } 
+  #crudForm >div.tarifa_venta_mostrar {
+    grid-column: 3 / span 1;
+    grid-row: 6/ 6;
+    display:block;
+    
+  } 
+  #crudForm >div.descuento_profesionales_mostrar {
+    grid-column: 9/ span 1;
+    grid-row: 6/ 6;
+    display:block;
+    
+  }
+  #crudForm >div.descuento_profesionales_vip_mostrar {
+    grid-column: 11 / span 1;
+    grid-row: 6/ 6;
+    display:block;
+    
+  }
+  #crudForm >div.margen_real_producto_mostrar {
+    grid-column: 3/ span 1;
+    grid-row: 7/ 7;
+    display:block;
+    
+  }
+
+  #crudForm >div.beneficio_recomendado_mostrar {
+    grid-column: 11/ span 1;
+    grid-row: 7/ 7;
+    display:block;
+    
+  }
+}
+
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1 1fr);
+
+    #crudForm > div.codigo_producto {
+      grid-column: 1 / span 1;
+      grid-row: 1/1;
+      display:block;
+   }
+  
+    #crudForm >div.id_producto_mostrar {
+      grid-column: 1 / span 1;
+      grid-row: 2/2;
+    display:block;
+  }
+  #crudForm >div.nombre {
+    grid-column: 1 / span 1;
+    grid-row: 3/3;
+    display:block;
+  } 
+  #crudForm >div.tipo_unidad_mostrar {
+    grid-column: 1 / span 1;
+    grid-row: 4/4;
+      display:block;
+      
+    }
+    #crudForm >div.url_imagen_portada_mostrar {
+      grid-column: 1 / span 1;
+      grid-row: 5/5;
+      display:block;
+    }
+  
+    
+   
+  #crudForm >div.status_producto {
+    grid-column: 1 / span 1;
+    grid-row: 6/6;
+      display:block;
+      
+    } 
+    #crudForm div.id_grupo {
+      grid-column: 1 / span 1;
+      grid-row: 7/7;
+      display:block;
+     
+    }
+   
+    
+  
+    #crudForm div.id_familia {
+      grid-column: 1 / span 1;
+      grid-row: 8/8;
+      display:block;
+     
+     
+    }
+  
+    #crudForm div.peso_real_mostrar {
+      grid-column: 1 / span 1;
+      grid-row: 9/9;
+      display:block;
+     
+      
+     
+  }
+  
+    #crudForm div.anada {
+      grid-column: 1 / span 1;
+      grid-row: 10/10;
+       display:block; 
+    } 
+  
+    
+  
+   
+  
+  
+  #crudForm >div.control_stock_mostrar {
+    grid-column: 1 / span 1;
+    grid-row: 11/11;
+  display:block;
+  
+  }
+  
+  #crudForm >div.stock_mostrar {
+    grid-column: 1 / span 1;
+    grid-row: 12/12;
+      display:block;
+      
+      
+    } 
+  
+    #crudForm >div.id_proveedor_web {
+      grid-column: 1 / span 1;
+      grid-row: 13/13;
+      display:block;
+      
+      
+    } 
+  
+    #crudForm >div.unidades_caja_mostrar {
+      grid-column: 1 / span 1;
+      grid-row: 14/14;
+      display:block;
+      
+      
+    } 
+  
+    #crudForm >div.unidades_precio_mostrar {
+      grid-column: 1 / span 1;
+      grid-row: 15/15;
+      display:block;
+      
+    } 
+    #crudForm >div.precio_compra_mostrar {
+      grid-column: 1 / span 1;
+      grid-row: 16/16;
+      display:block;
+      
+    } 
+    #crudForm >div.descuento_1_compra_mostrar {
+      grid-column: 1 / span 1;
+      grid-row: 17/17;
+      display:block;
+      
+    } 
+    #crudForm >div.tarifa_venta_mostrar {
+      grid-column: 1 / span 1;
+      grid-row: 18/18;
+      display:block;
+      
+    } 
+    #crudForm >div.descuento_profesionales_mostrar {
+      grid-column: 1 / span 1;
+      grid-row: 19/19;
+      display:block;
+      
+    }
+    #crudForm >div.descuento_profesionales_vip_mostrar {
+      grid-column: 1 / span 1;
+      grid-row: 20/20;
+      display:block;
+      
+    }
+    #crudForm >div.margen_real_producto_mostrar {
+      grid-column: 1 / span 1;
+      grid-row: 21/21;
+      display:block;
+      
+    }
+  
+    #crudForm >div.beneficio_recomendado_mostrar {
+      grid-column: 1 / span 1;
+      grid-row: 22/22;
+      display:block;
+      
+    }
+
+
+  }
+
+

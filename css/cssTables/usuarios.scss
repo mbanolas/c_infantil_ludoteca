@@ -1,0 +1,864 @@
+ 
+
+/* color, tamaño y separación titulos 
+   general para todos @media */
+.subtitulo {
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#crudForm div.form-group {
+    $fila: 70;
+    grid-column-start: 1;
+    grid-column-end: 25;
+    grid-row-start: $fila;
+    grid-row-end: $fila;
+}
+
+#crudForm>div>div.card-body>div.md-form.texto_id_decisiones_urgentes_2_form_group {
+    margin-bottom: 50px !important;
+}
+
+#crudForm>div>div.card-body>div.md-form.id_decisiones_urgentes_form_group {
+    margin-bottom: 0px !important;
+}
+
+#gcrud-search-form > table > thead > tr.filter-row.gc-search-row > th{
+    display:none;
+}
+#gcrud-search-form > table > thead > tr:nth-child(1) > th.text-center{
+    display:none;
+}
+
+#crudForm > div > div.card-body > div.md-form.texto_edad_form_group{
+    font-size: small;
+}
+
+
+    /* 
+        ##Device = Desktops
+        ##Screen = 1281px to higher resolution desktops
+    */
+    @media (min-width: 1200px) {
+        /* color ancho mayor que 1281 */
+        .card-body{
+            background-color:rgb(245, 247, 248);
+        }
+        .md-form {
+            position: relative;
+            margin-top: 1.5rem;
+        }
+        // ocultar última columna   
+        #gcrud-search-form > table > 
+            & thead >
+                & tr:nth-child(1) > th:nth-child(6), 
+                tr.filter-row.gc-search-row > td:nth-child(6),
+                tbody > tr > td:nth-child(6)
+                    {
+                        display:block;
+                    }
+                    
+    /*elimina casilla búsqueda en dropdowns */
+    div.chosen-search {
+        display: none;
+    }
+    
+    div.chosen-drop {
+        margin-top: -13px !important;
+    }
+    
+    #crudForm>div>div.card-body>p.subtitulo {
+        display: none;
+    }
+    
+    #crudForm>div>div.card-body>div.md-form {
+        margin-top: 12px;
+        display: none;
+    }
+    
+    #report-error {
+        display: none;
+    }
+                
+    
+    #crudForm>div>div.card-body {
+        display: grid;
+        grid-template-rows: 
+                50px 70px 70px 
+                50px 70px 
+                50px 70px 70px 70px 
+                50px 48px 48px 48px 48px 48px 48px 
+                50px 48px 48px 48px 48px 48px 48px 48px 48px 48px 48px 48px 70px 
+                50px 48px 48px 48px 48px 48px 
+                50px 48px 48px 
+                50px 48px 48px 48px 70px 80px 80px 80px 80px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 1%;
+    }
+    
+      $seccion1:1;
+      $seccion1a:4;
+      $seccion2:6;
+      $seccion4:10;
+      $seccion5:17;
+      $seccion6:30;
+      $seccion7:37;
+      $seccion8:40;
+      $seccion9:47;
+      $seccion3:84;
+
+      $titulos: ( 
+          'subtitulo1': ('DADES PERSONALS RESPONSABLE', $seccion1), 
+          'subtitulo1a': ('DADES SEGO CONTACTE', $seccion1a), 
+          'subtitulo2': ('DADES PERSONALS INFANT/ JOVE', $seccion2),  
+          'subtitulo4': ('MÉS DADES', $seccion4), 
+          'subtitulo5': ('FITXA DE SALUT', $seccion5), 
+          'subtitulo6': ('DOCUMENTACIÓ A ADJUNTAR', $seccion6), 
+          'subtitulo7': ('COMUNICACIONS', $seccion7), 
+          'subtitulo8': ('AUTORITZACIONS ENTRADES I SORTIDES', $seccion8), 
+          'subtitulo9': ('AUTORITZACIONS LEGALS', $seccion9),       
+          );
+                      
+                      
+        $campos: ( 
+      // fila, columna, span
+            'dni_tutor': ($seccion1+1, 1, 3),
+            'nombre_tutor': ($seccion1+1, 4, 4), 
+            'apellido1_tutor': ($seccion1+1, 8, 4), 
+            'apellido2_tutor': ($seccion1+1, 12, 4),
+            'email_tutor': ($seccion1+1, 16, 5), 
+            'parentesco_tutor': ($seccion1+1, 21, 4), 
+            'direccion_tutor': ($seccion1+2, 1, 8), 
+            'poblacion_tutor': ($seccion1+2, 9, 4), 
+            'provincia_tutor': ($seccion1+2, 13, 4), 
+            'codigo_postal_tutor': ($seccion1+2, 17, 2), 
+            'telefono1_tutor': ($seccion1+2, 19, 3), 
+            'telefono2_tutor': ($seccion1+2, 22, 3), 
+            'dni_tutor_2': ($seccion1a+1, 1, 3), 
+            'nombre_tutor_2': ($seccion1a+1, 4, 8), // 'apellido1_tutor_2': (7,8,4),
+            'telefono1_tutor_2': ($seccion1a+1, 12, 2), 
+            'telefono2_tutor_2': ($seccion1a+1, 14, 2), 
+            'email_tutor_2': ($seccion1a+1, 16, 5), 
+            'parentesco_tutor_2': ($seccion1a+1, 21, 3), 
+            'dni_alumno': ($seccion2+1, 1, 3), 
+            'nombre_alumno': ($seccion2+1, 4, 4), 
+            'apellido1_alumno': ($seccion2+1, 8, 4), 
+            'apellido2_alumno': ($seccion2+1, 12, 4), 
+            'fecha_nacimiento': ($seccion2+1, 16, 3), 
+            'texto_edad':($seccion2+1, 19, 2), 
+            'direccion_alumno': ($seccion2+2, 1, 4), 
+            'poblacion_alumno': ($seccion2+2, 5, 4), 
+            'provincia_alumno': ($seccion2+2, 9, 4), 
+            'codigo_postal_alumno': ($seccion2+2, 13, 2), 
+            'num_tarjeta_sanitaria': ($seccion2+2, 15, 4), 
+            'curso_escolar': ($seccion2+3, 1, 2), 
+            'escuela': ($seccion2+3, 3, 5), 
+            'nombre_tutor_referent_centre_educatiu': ($seccion2+3, 8, 6), 
+            'telefono_tutor_referent_centre_educatiu': ($seccion2+3, 14, 3), 
+            // 'precio': ($seccion3+4,4,2),
+            'becas_descuento_ayuntamiento': ($seccion4+1, 13, 5), 
+            'becas_descuento_servicios_sociales': ($seccion4+1, 18, 5), 
+            'monitora_desde': ($seccion4+2, 13, 5), 
+            'monitora_hasta': ($seccion4+2, 18, 5), 
+            'hermanos_actividad': ($seccion4+4, 13, 3), 
+            'hermano_num': ($seccion4+4, 16, 3), 
+            'asistencia_atencion': ($seccion4+6, 12, 12), 
+            'derivado': (20, 12, 12), 
+            'alergia':($seccion5+1, 13, 6), 
+            'alergia_medicacion':($seccion5+1, 19, 6), 
+            'insuficiencia': ($seccion5+3, 13, 6), 
+            'insuficiencia_medicacion': ($seccion5+3, 19, 6), 
+            'respiratoria': ($seccion5+4, 13, 12), 
+            'vascular': ($seccion5+6, 13, 12), 
+            'cronica': ($seccion5+7, 13, 12), 
+            'hemorragia': ($seccion5+8, 13, 12), 
+            'medicacion': ($seccion5+9, 13, 12), 
+            'nadar': ($seccion5+10, 13, 12), 
+            'nee': ($seccion5+11, 13, 12),
+            'observacions': ($seccion5+12, 1, 20), 
+            'presenta_otras': ($seccion6+5, 13, 12), 
+            'aut_nombre': ($seccion8+4, 1, 4), 
+            'aut_apellido1': ($seccion8+4, 5, 4), 
+            'aut_apellido2': ($seccion8+4, 9, 4), 
+            'aut_dni': ($seccion8+4, 13, 4), 
+            'aut_parentesco': ($seccion8+4, 17, 4), 
+
+            'aut_nombre_2': ($seccion8+5, 1, 4), 
+            'aut_apellido1_2': ($seccion8+5, 5, 4), 
+            'aut_apellido2_2': ($seccion8+5, 9, 4), 
+            'aut_dni_2': ($seccion8+5, 13, 4), 
+            'aut_parentesco_2': ($seccion8+5, 17, 4),
+
+            'aut_nombre_3': ($seccion8+6, 1, 4), 
+            'aut_apellido1_3': ($seccion8+6, 5, 4), 
+            'aut_apellido2_3': ($seccion8+6, 9, 4), 
+            'aut_dni_3': ($seccion8+6, 13, 4), 
+            'aut_parentesco_3': ($seccion8+6, 17, 4),
+
+            'aut_nombre_4': ($seccion8+7, 1, 4), 
+            'aut_apellido1_4': ($seccion8+7, 5, 4), 
+            'aut_apellido2_4': ($seccion8+7, 9, 4), 
+            'aut_dni_4': ($seccion8+7, 13, 4), 
+            'aut_parentesco_4': ($seccion8+7, 17, 4)
+      
+      );
+    $selecciones: ( 
+        'id_sexo': ($seccion2+1, 21, 2), 
+        'id_es_del_districto': ($seccion2+2, 21, 2)
+        );
+    $seleccionesMultiples: ( 
+    );
+    $cuestionario: ( 
+        'id_becas': ($seccion4+1, 10, 12), 
+        'id_monitora': ($seccion4+2, 10, 12), 
+        'id_participacion_anterior': ($seccion4+3, 10, 12), 
+        'id_hermanos_actividad': ($seccion4+4, 10, 12), 
+        'id_tarjeta_t12': ($seccion4+5, 10, 12), 
+        'id_asistencia_atencion': ($seccion4+6, 10, 12), 
+        'id_alergia': ($seccion5+1, 10, 12), 
+        'id_alergia_administracion_medicacion': ($seccion5+2, 10, 12), 
+        'id_insuficiencia': ($seccion5+3, 10, 12), 
+        'id_insuficiencia_administracion_medicacion': ($seccion5+4, 10, 12), 
+        'id_respiratoria': ($seccion5+5, 10, 12), 
+        'id_vascular': ($seccion5+6, 10, 12), 
+        'id_cronica': ($seccion5+7, 10, 12), 
+        'id_hemorragia': ($seccion5+8, 10, 12), 
+        'id_medicacion': ($seccion5+9, 10, 12), 
+        'id_nadar': ($seccion5+10, 10, 12), 
+        'id_nee': ($seccion5+11, 10, 12), 
+        'id_presenta_dni_tutor': ($seccion6+1, 10, 12), 
+        'id_presenta_dni_alumni': ($seccion6+2, 10, 12), 
+        'id_presenta_libro_vacunas': ($seccion6+3, 10, 12), 
+        'id_presenta_tarjeta_sanitaria': ($seccion6+4, 10, 12), 
+        'id_presenta_otras': ($seccion6+5, 10, 12), 
+        'id_comunicaciones': ($seccion7+1, 12, 12), 
+        'id_otras_comunicaciones': ($seccion7+2, 12, 12), 
+        'id_aut_acompanar': ($seccion8+1, 18, 11), 
+        'id_aut_ir_solo': ($seccion8+2, 18, 11), 
+        'id_aut_recogida': ($seccion8+3, 18, 11), 
+        'id_decisiones_urgentes_2': ($seccion9+2, 18, 5), 
+        'id_imagen_en_actividades': ($seccion9+3, 18, 5), 
+        'id_imagen_divulgacion': ($seccion9+4, 18, 5), 
+        'id_lectura_informacion': ($seccion9+5, 18, 5)
+    );
+                                      
+      @each $name,$valores in $titulos {
+          $comentario: nth($valores, 1);
+          $fila: nth($valores, 2);
+          /* #{$comentario} */
+          #crudForm>div>div.card-body>p.#{$name} {
+              grid-column-start: 1;
+              grid-column-end: 20;
+              grid-row-start: $fila;
+              grid-row-end: $fila;
+              display: block;
+          }
+      }
+    
+      @each $name, $valores in $campos {
+          $fila: nth($valores, 1);
+          $columna: nth($valores, 2);
+          $span: nth($valores, 3);
+          $end: $columna+$span;
+          #crudForm>div>div.card-body>div.#{$name}_form_group {
+              margin-top: 2px;
+              grid-column-start: $columna;
+              grid-column-end: $end;
+              grid-row-start: $fila;
+              grid-row-end: $fila;
+              display: block;
+          }
+          #field-#{$name} {
+              padding-bottom: 20px;
+          }
+          #crudForm>div>div.card-body>div.md-form.#{$name}_form_group> {
+              & label {
+                  padding-bottom: 22px;
+              }
+              & label.active {
+                  margin-bottom: 0px;
+                  margin-top: 20px;
+                  padding-bottom: 0px;
+              }
+              & label.active+input#field-#{$name} {
+                  padding-bottom: 0px;
+                  margin-top: 20px;
+              }
+          }
+      }
+      
+      @each $name, $valores in $selecciones {
+          $fila: nth($valores, 1);
+          $columna: nth($valores, 2);
+          $span: nth($valores, 3);
+          $end: $columna+$span;
+          
+          
+        
+          #crudForm>div>div.card-body>div.#{$name}_form_group {
+              grid-column-start: $columna;
+              grid-column-end: $end;
+              grid-row-start: $fila;
+              grid-row-end: $fila;
+              display: block;
+          }
+          @if($name=='id_actividad') {
+              #field_#{$name}_chosen {
+                  width: 1000px !important;
+                  margin-top: 10px !important;
+                  &>a {
+                      margin-top: 12px;
+                  }
+              }
+          }
+          @else {
+              #field_#{$name}_chosen {
+                  width: 200px !important;
+    
+                  &>a {
+                      margin-top: 12px;
+                      width: 150px;
+                  }
+                  &>div {
+                    margin-top: 1px !important;
+                    width: 150px;
+                }
+              }
+          }
+          #crudForm>div>div.card-body>div.md-form.#{$name}_form_group>label {
+              margin-top: -30px;
+              margin-left: 10px;
+              font-size: 12.8px;
+          }
+      }
+      
+      @each $name, $valores in $seleccionesMultiples {
+          $fila: nth($valores, 1);
+          $columna: nth($valores, 2);
+          $span: nth($valores, 3);
+          $end: $columna+$span;
+          #crudForm>div>div.card-body>div.#{$name}_form_group {
+              grid-column-start: $columna;
+              grid-column-end: $end;
+              grid-row-start: $fila;
+              grid-row-end: $fila;
+              display: block;
+          }
+          #field_#{$name}_chosen {
+              width: 1200px !important;
+              margin-top: 10px !important;
+              &>a {
+                  margin-top: 12px;
+              }
+              &>.chosen-drop {
+                  margin-top: 0px !important;
+              }
+          }
+          #crudForm>div>div.card-body>div.md-form.#{$name}_form_group>label {
+              margin-top: -30px;
+              margin-left: 10px;
+              font-size: 12.8px;
+          }
+      }
+      
+      @each $name, $valores in $cuestionario {
+          $fila: nth($valores, 1);
+          $columna: nth($valores, 2);
+          $span: nth($valores, 3);
+          $end: $columna + $span;
+          
+          #crudForm>div>div.card-body>div.#{$name}_form_group {
+              grid-column-start: $columna;
+              grid-column-end: $end;
+              grid-row-start: $fila;
+              grid-row-end: $fila;
+              margin-top: 32px !important;
+              margin-bottom: 8px !important;
+              display: block;
+          }
+          #crudForm>div>div.card-body>div.texto_#{$name}_form_group {
+              margin-top: 8px;
+              margin-bottom: 0px !important;
+              grid-column-start: 1;
+              grid-column-end: 13 + $span;
+              grid-row-start: $fila;
+              grid-row-end: $fila;
+              display: block;
+          }
+          #field_#{$name}_chosen {
+              width: 90px !important;
+              margin-top: 50px !important;
+              &>a {
+                  margin-top: -58px !important;
+              }
+              &>div {
+                margin-top: -33px !important;
+            }
+          }
+      }
+
+    }
+    /* 
+        ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px
+    */
+    /* 
+        @media (min-width: 1025px) and (max-width: 1280px) {
+        }
+    */
+    /* 
+        ##Device = Tablets, Ipads (portrait)
+        ##Screen = B/w 768px to 1024px
+    */
+    /*     
+        @media (min-width: 768px) and (max-width: 1024px) {
+        }
+    */
+    /* 
+        ##Device = Tablets, Ipads (landscape)
+        ##Screen = B/w 768px to 1024px
+    */
+    /*
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        }
+    */
+    /* 
+        ##Device = Low Resolution Tablets, Mobiles (Landscape)
+        ##Screen = B/w 481px to 767px
+    */
+    // @media (min-width: 481px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 1200px) {
+        .card-body{
+            background-color:rgb(245, 247, 248);
+        }
+        .md-form {
+            margin-top: 2.5rem;
+        }
+
+        $campos: ( 
+      // fila, columna, span
+      'dni_tutor',
+      'nombre_tutor',
+      'apellido1_tutor',
+      'apellido2_tutor',
+      'email_tutor',
+      'parentesco_tutor',
+      'direccion_tutor',
+      'poblacion_tutor',
+      'provincia_tutor',
+      'codigo_postal_tutor',
+      'telefono1_tutor',
+      'telefono2_tutor',
+      'dni_tutor_2',
+      'nombre_tutor_2',
+      'telefono1_tutor_2',
+      'telefono2_tutor_2',
+      'email_tutor_2',
+      'parentesco_tutor_2',
+      'dni_alumno',
+      'nombre_alumno',
+      'apellido1_alumno',
+      'apellido2_alumno',
+      'fecha_nacimiento',
+      'direccion_alumno',
+      'poblacion_alumno',
+      'provincia_alumno',
+      'codigo_postal_alumno',
+      'num_tarjeta_sanitaria',
+      'curso_escolar',
+      'escuela',
+      'nombre_tutor_referent_centre_educatiu',
+      'telefono_tutor_referent_centre_educatiu',
+      'becas_descuento_ayuntamiento',
+      'becas_descuento_servicios_sociales',
+      'monitora_desde',
+      'monitora_hasta',
+      'hermanos_actividad',
+      'hermano_num',
+      'asistencia_atencion',
+      'derivado',
+      'alergia',
+      'alergia_medicacion',
+      'insuficiencia',
+      'insuficiencia_medicacion',
+      'respiratoria',
+      'vascular',
+      'cronica',
+      'hemorragia',
+      'medicacion',
+      'nadar',
+      'nee',
+      'observacions',
+      'presenta_otras',
+      'aut_nombre',
+      'aut_apellido1',
+      'aut_apellido2',
+      'aut_dni',
+      'aut_parentesco',
+
+      'aut_nombre_2',
+      'aut_apellido1_2',
+      'aut_apellido2_2',
+      'aut_dni_2',
+      'aut_parentesco_2',
+
+      'aut_nombre_3',
+      'aut_apellido1_3',
+      'aut_apellido2_3',
+      'aut_dni_3',
+      'aut_parentesco_3',
+
+      'aut_nombre_4',
+      'aut_apellido1_4',
+      'aut_apellido2_4',
+      'aut_dni_4',
+      'aut_parentesco_4'
+      );
+
+        $cuestionario: ( 
+            'id_becas',
+            'id_monitora',
+            'id_participacion_anterior',
+            'id_hermanos_actividad',
+            'id_tarjeta_t12',
+            'id_asistencia_atencion',
+            'id_alergia',
+            'id_alergia_administracion_medicacion',
+            'id_insuficiencia',
+            'id_insuficiencia_administracion_medicacion',
+            'id_respiratoria',
+            'id_vascular',
+            'id_cronica',
+            'id_hemorragia',
+            'id_medicacion',
+            'id_nadar',
+            'id_nee',
+            'id_presenta_dni_tutor',
+            'id_presenta_dni_alumni',
+            'id_presenta_libro_vacunas',
+            'id_presenta_tarjeta_sanitaria',
+            'id_presenta_otras',
+            'id_comunicaciones',
+            'id_otras_comunicaciones',
+            'id_aut_acompanar',
+            'id_aut_ir_solo',
+            'id_aut_recogida',
+            // 'id_decisiones_urgentes',
+            'id_decisiones_urgentes_2',
+            'id_imagen_en_actividades',
+            'id_imagen_divulgacion',
+            'id_lectura_informacion',
+            
+            );
+        $cuestionario2: (
+            'id_es_del_districto',
+            'id_sexo',
+        );    
+        @each $name,$valores in $cuestionario {    
+            #crudForm > div > div.card-body > div.md-form.texto_#{$name}_form_group > label{
+                margin-top:-42px;
+            }
+        }
+        @each $name,$valores in $cuestionario2 {    
+        #crudForm > div > div.card-body > div.md-form.#{$name}_form_group > label{
+                margin-top:-42px;
+            }      
+        }
+        @each $name,$valores in $campos {    
+            .md-form##{$name}_form_group{
+                    margin-top:2px !important;
+                } 
+            input#field-#{$name}{
+                padding-bottom:20px !important;
+            }         
+            }
+
+        .md-form.id_aut_acompanar_form_group{
+            margin-top:4.1rem;
+        }
+        .md-form.id_aut_recogida_form_group{
+            margin-top:4.1rem;
+        }
+        .md-form.aut_nombre_form_group{
+            margin-top:5.1rem;
+        }
+        .md-form.id_decisiones_urgentes_2_form_group{
+            margin-top:8.5rem;
+        }
+        .md-form.id_imagen_en_actividades_form_group{
+            margin-top:7.5rem;
+        }
+        .md-form.id_imagen_divulgacion_form_group{
+            margin-top:8.5rem;
+        }
+        .md-form.id_lectura_informacion_form_group{
+            margin-top:4.5rem;
+        }
+
+        #field_id_decisiones_urgentes_2_chosen{
+            margin-top:87px;
+        }
+        // input.form-control{
+        //     padding-bottom: 20px;
+        // }
+        // div.md-form{
+        //     margin-top:2px;
+        // }
+
+        #field_id_sexo_chosen > a {
+            width: 150px;
+        }
+  
+
+        // ocultar última columna   
+        #gcrud-search-form > table > 
+        & thead >
+            & tr:nth-child(1) > th:nth-child(6), 
+              tr.filter-row.gc-search-row > td:nth-child(6),
+              tbody > tr > td:nth-child(6)
+                {
+                    display:none;
+                }
+
+
+        #gcrud-search-form>table>tbody>tr>td:nth-child(10)>div.d-none.d-lg-block.d-xl-block.d-md-block>div>a:nth-child(2) {
+          color: black !important;
+          background-color: yellow !important;
+        }       
+
+        
+
+        /* num_usuario */
+        #crudForm>div>div.card-body>div.num_usuario_form_group {
+            margin-top: 20px;
+            grid-column-start: 1;
+            grid-column-end: 16;
+            grid-row: 1/1;
+            display: block;
+        }
+
+    }
+    /* 
+        ##Device = Most of the Smartphones Mobiles (Portrait)
+        ##Screen = B/w 320px to 479px
+    */
+    @media (min-width: 320px) and (max-width: 480px) {
+        .card-body{
+            background-color:rgb(247, 8, 163);
+        }
+        .md-form {
+            margin-top: 2.5rem;
+        }
+
+        $campos: ( 
+      // fila, columna, span
+      'dni_tutor',
+      'nombre_tutor',
+      'apellido1_tutor',
+      'apellido2_tutor',
+      'email_tutor',
+      'parentesco_tutor',
+      'direccion_tutor',
+      'poblacion_tutor',
+      'provincia_tutor',
+      'codigo_postal_tutor',
+      'telefono1_tutor',
+      'telefono2_tutor',
+      'dni_tutor_2',
+      'nombre_tutor_2',
+      'telefono1_tutor_2',
+      'telefono2_tutor_2',
+      'email_tutor_2',
+      'parentesco_tutor_2',
+      'dni_alumno',
+      'nombre_alumno',
+      'apellido1_alumno',
+      'apellido2_alumno',
+      'fecha_nacimiento',
+      'direccion_alumno',
+      'poblacion_alumno',
+      'provincia_alumno',
+      'codigo_postal_alumno',
+      'num_tarjeta_sanitaria',
+      'curso_escolar',
+      'escuela',
+      'nombre_tutor_referent_centre_educatiu',
+      'telefono_tutor_referent_centre_educatiu',
+      'becas_descuento_ayuntamiento',
+      'becas_descuento_servicios_sociales',
+      'monitora_desde',
+      'monitora_hasta',
+      'hermanos_actividad',
+      'hermano_num',
+      'asistencia_atencion',
+      'derivado',
+      'alergia',
+      'alergia_medicacion',
+      'insuficiencia',
+      'insuficiencia_medicacion',
+      'respiratoria',
+      'vascular',
+      'cronica',
+      'hemorragia',
+      'medicacion',
+      'nadar',
+      'nee',
+      'observacions',
+      'presenta_otras',
+      'aut_nombre',
+      'aut_apellido1',
+      'aut_apellido2',
+      'aut_dni',
+      'aut_parentesco',
+
+      'aut_nombre_2',
+      'aut_apellido1_2',
+      'aut_apellido2_2',
+      'aut_dni_2',
+      'aut_parentesco_2',  
+
+      'aut_nombre_3',
+      'aut_apellido1_3',
+      'aut_apellido2_3',
+      'aut_dni_3',
+      'aut_parentesco_3',
+
+      'aut_nombre_4',
+      'aut_apellido1_4',
+      'aut_apellido2_4',
+      'aut_dni_4',
+      'aut_parentesco_4'
+
+      );
+
+        $cuestionario: ( 
+            'id_becas',
+            'id_monitora',
+            'id_participacion_anterior',
+            'id_hermanos_actividad',
+            'id_tarjeta_t12',
+            'id_asistencia_atencion',
+            'id_alergia',
+            'id_alergia_administracion_medicacion',
+            'id_insuficiencia',
+            'id_insuficiencia_administracion_medicacion',
+            'id_respiratoria',
+            'id_vascular',
+            'id_cronica',
+            'id_hemorragia',
+            'id_medicacion',
+            'id_nadar',
+            'id_nee',
+            'id_presenta_dni_tutor',
+            'id_presenta_dni_alumni',
+            'id_presenta_libro_vacunas',
+            'id_presenta_tarjeta_sanitaria',
+            'id_presenta_otras',
+            'id_comunicaciones',
+            'id_otras_comunicaciones',
+            'id_aut_acompanar',
+            'id_aut_ir_solo',
+            'id_aut_recogida',
+            // 'id_decisiones_urgentes',
+            'id_decisiones_urgentes_2',
+            'id_imagen_en_actividades',
+            'id_imagen_divulgacion',
+            'id_lectura_informacion',
+            
+            );
+        $cuestionario2: (
+            'id_es_del_districto',
+            'id_sexo',
+        );    
+        @each $name,$valores in $cuestionario {    
+            #crudForm > div > div.card-body > div.md-form.texto_#{$name}_form_group > label{
+                margin-top:-42px;
+            }
+        }
+        @each $name,$valores in $cuestionario2 {    
+        #crudForm > div > div.card-body > div.md-form.#{$name}_form_group > label{
+                margin-top:-42px;
+            }      
+        }
+        @each $name,$valores in $campos {    
+            .md-form##{$name}_form_group{
+                    margin-top:2px !important;
+                } 
+            input#field-#{$name}{
+                padding-bottom:20px !important;
+            }         
+            }
+
+        .md-form.id_aut_acompanar_form_group{
+            margin-top:4.1rem;
+        }
+        .md-form.id_aut_recogida_form_group{
+            margin-top:4.1rem;
+        }
+        .md-form.aut_nombre_form_group{
+            margin-top:5.1rem;
+        }
+        .md-form.id_comunicaciones_form_group{
+            margin-top:4.1rem;
+        }
+        .md-form.id_otras_comunicaciones_form_group{
+            margin-top:4.1rem;
+        }
+        .md-form.id_decisiones_urgentes_form_group{
+            margin-top:8.5rem;
+        }
+        .md-form.id_imagen_en_actividades_form_group{
+            margin-top:7.5rem;
+        }
+        .md-form.id_imagen_divulgacion_form_group{
+            margin-top:8.5rem;
+        }
+        .md-form.id_lectura_informacion_form_group{
+            margin-top:4.5rem;
+        }
+
+        // input.form-control{
+        //     padding-bottom: 20px;
+        // }
+        // div.md-form{
+        //     margin-top:2px;
+        // }
+
+        #field_id_sexo_chosen > a {
+            width: 150px;
+        }
+  
+
+        // ocultar última columna   
+        #gcrud-search-form > table > 
+        & thead >
+            & tr:nth-child(1) > th:nth-child(6), 
+              tr.filter-row.gc-search-row > td:nth-child(6),
+              tbody > tr > td:nth-child(6)
+                {
+                    display:none;
+                }
+
+
+        #gcrud-search-form>table>tbody>tr>td:nth-child(10)>div.d-none.d-lg-block.d-xl-block.d-md-block>div>a:nth-child(2) {
+          color: black !important;
+          background-color: yellow !important;
+        }       
+
+        
+
+        /* num_usuario */
+        #crudForm>div>div.card-body>div.num_usuario_form_group {
+            margin-top: 20px;
+            grid-column-start: 1;
+            grid-column-end: 16;
+            grid-row: 1/1;
+            display: block;
+        }
+
+    }
+    /* fin media */
+  
+  
